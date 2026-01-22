@@ -2,7 +2,8 @@
 Created by pixpalette.com - online design magazine -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +13,7 @@ Created by pixpalette.com - online design magazine -->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    
+
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
@@ -22,304 +23,426 @@ Created by pixpalette.com - online design magazine -->
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-  	
+</head>
+
+<body>
+
     <div class="loader">
-       <div>
-        <img src="images/icons/preloader.gif" />
-       </div>
+        <div>
+            <img src="images/icons/preloader.gif" />
+        </div>
     </div>
-    
+
     <div class="container-fluid">
-		<div class="row">
-        	<div class="col-sm-5 left-wrapper">
-            	<div class="event-banner-wrapper">
-                	<div class="logo">
+        <div class="row">
+            <div class="col-sm-5 left-wrapper">
+                <div class="event-banner-wrapper">
+                    <div class="logo">
                         <h1>Bundet</h1>
                     </div>
-                
-                	<h2>
-                    Makaroni<br>Bundet Bantat
-                    <span>10 April 2017, 8:00 PM</span>
+
+                    <h2>
+                        Makaroni<br>Bantat / Bantet
+                        <span id="currentTime"></span>
                     </h2>
-                    <!-- <p>created by <a href="http://www.pixpalette.com" target="_blank">pixpalette</a></p> -->
                 </div>
             </div>
             <div class="col-sm-7 right-wrapper">
-            	<div class="event-ticket-wrapper">
-                    
+                <div class="event-ticket-wrapper">
+
                     <div class="event-tab">
-                
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#buyTicket" aria-controls="buyTicket" role="tab" data-toggle="tab">Home</a></li>
-                    <li role="presentation"><a href="#venue" aria-controls="venue" role="tab" data-toggle="tab">About</a></li>
-                    <li role="presentation"><a href="#blog" aria-controls="blog" role="tab" data-toggle="tab">Blog</a></li>
-                    <li role="presentation"><a href="#termCondition" aria-controls="termCondition" role="tab" data-toggle="tab">Terms & Conditions</a></li>
-                  </ul>
-                
-                  <!-- Tab panes -->
-                  <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="buyTicket">
-                    	<div class="row">
 
-                            <div class="col-md-6">
-                            	<div class="ticketBox" data-ticket-price="18000" style="background-image: url(images/makaroni0.jpeg);">
-                                	<div class="inactiveStatus"></div>
-                                    
-                                    <div class="row" id="item">
- 			                       	<div class="col-xs-6">
-            							<div class="ticket-name">Ruby<span>
-                                        Standing<br>
-                                        1 Ticket for 1 person</span></div>
-            						</div>
-                                    
-                                    <div class="col-xs-6">
-            							<div class="ticket-price-count-box">
-                                            <div class="ticket-control">
-                                                <div class="input-group">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[5]">
-                                                          <span class="glyphicon glyphicon-minus"></span>
-                                                      </button>
-                                                  </span>
-                                                  <input type="text" name="quant[5]" class="form-control input-number" value="0" min="0" max="10">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[5]">
-                                                          <span class="glyphicon glyphicon-plus"></span>
-                                                      </button>
-                                                  </span>
-                                                </div>
-                                                
-                                            </div>
-                                            <p class="price">Rs.18000</p>
-                                        </div>
-            						</div>
-                                    </div>
-                                
-                                    <div class="ticket-description">
-                                        <p><strong>Please refer Venue Plan:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                            
-                                </div>
-                    
-                            </div>
-                            <div class="col-md-6">
-                            	<div class="ticketBox" data-ticket-price="15000" style="background-image: url(images/makaroni1.jpeg);">
-                                	<div class="inactiveStatus"></div>
-                                    
-                                    <div class="row" id="item">
- 			                       	<div class="col-xs-6">
-            							<div class="ticket-name">Pearl<span>
-                                        Standing<br>
-                                        1 Ticket for 1 person</span></div>
-            						</div>
-                                    
-                                    <div class="col-xs-6">
-            							<div class="ticket-price-count-box">
-                                            <div class="ticket-control">
-                                                <div class="input-group">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[6]">
-                                                          <span class="glyphicon glyphicon-minus"></span>
-                                                      </button>
-                                                  </span>
-                                                  <input type="text" name="quant[6]" class="form-control input-number" value="0" min="0" max="10">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[6]">
-                                                          <span class="glyphicon glyphicon-plus"></span>
-                                                      </button>
-                                                  </span>
-                                                </div>
-                                                
-                                            </div>
-                                            <p class="price">Rs.15000</p>
-                                        </div>
-            						</div>
-                                    </div>
-                                	
-                                    
-                                    <div class="ticket-description">
-                                    	<p><strong>Please refer Venue Plan:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                            
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                            	<div class="ticketBox" data-ticket-price="10000" style="background-image: url(images/makaroni2.jpeg);">
-                                	<div class="inactiveStatus"></div>
-                                    
-                                    <div class="row" id="item">
- 			                       	<div class="col-xs-6">
-            							<div class="ticket-name">Emerald<span>
-                                        Standing<br>
-                                        1 Ticket for 1 person</div>
-            						</div>
-                                    
-                                    <div class="col-xs-6">
-            							<div class="ticket-price-count-box">
-                                            <div class="ticket-control">
-                                                <div class="input-group">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[7]">
-                                                          <span class="glyphicon glyphicon-minus"></span>
-                                                      </button>
-                                                  </span>
-                                                  <input type="text" name="quant[7]" class="form-control input-number" value="0" min="0" max="10">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[7]">
-                                                          <span class="glyphicon glyphicon-plus"></span>
-                                                      </button>
-                                                  </span>
-                                                </div>
-                                                
-                                            </div>
-                                            <p class="price">Rs.10000</p>
-                                        </div>
-            						</div>
-                                    </div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#buyTicket" aria-controls="buyTicket"
+                                    role="tab" data-toggle="tab">Home</a></li>
+                            <li role="presentation"><a href="#termCondition" aria-controls="termCondition" role="tab"
+                                    data-toggle="tab">Petunjuk</a></li>
+                            <li role="presentation"><a href="https://blog.nftoa.com" aria-controls="blog"
+                                    role="tab">Blog</a></li>
+                        </ul>
 
-                                    <div class="ticket-description">
-                                    	<p><strong>Please refer Venue Plan:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="buyTicket">
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="ticketBox" data-ticket-price="7000"
+                                            style="background-image: url(images/makaroni0.jpeg);">
+                                            <div class="inactiveStatus"></div>
+
+                                            <div class="row" id="item">
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-name">Extra Hot<span>
+                                                            Berat 100g<br>
+                                                            Kemasan Box</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-price-count-box">
+                                                        <div class="ticket-control">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        disabled="disabled" data-type="minus"
+                                                                        data-field="quant[5]">
+                                                                        <span class="glyphicon glyphicon-minus"></span>
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[5]"
+                                                                    class="form-control input-number" value="0" min="0"
+                                                                    max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        data-type="plus" data-field="quant[5]">
+                                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <p class="price">Rp 7.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ticket-description">
+                                                <p><strong>Deskripsi:</strong><br>Makaroni Bantet adalah makaroni yang
+                                                    diolah sedemikian rupa untuk menjaga keseimbangan antara tingkat
+                                                    kematangan dengan tekstur pengembangan yang pass</p>
+                                            </div>
+
+                                        </div>
+
                                     </div>
-                                            
+                                    <div class="col-md-6">
+                                        <div class="ticketBox" data-ticket-price="7000"
+                                            style="background-image: url(images/makaroni1.jpeg);">
+                                            <div class="inactiveStatus"></div>
+
+                                            <div class="row" id="item">
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-name">Ayam Bawang Hot<span>
+                                                            Berat 100g<br>
+                                                            Kemasan Box</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-price-count-box">
+                                                        <div class="ticket-control">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        disabled="disabled" data-type="minus"
+                                                                        data-field="quant[6]">
+                                                                        <span class="glyphicon glyphicon-minus"></span>
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[6]"
+                                                                    class="form-control input-number" value="0" min="0"
+                                                                    max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        data-type="plus" data-field="quant[6]">
+                                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <p class="price">Rp 7.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="ticket-description">
+                                                <p><strong>Deskripsi:</strong><br>Makaroni Bantet adalah makaroni yang
+                                                    diolah sedemikian rupa untuk menjaga keseimbangan antara tingkat
+                                                    kematangan dengan tekstur pengembangan yang pass</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="ticketBox" data-ticket-price="7000"
+                                            style="background-image: url(images/makaroni2.jpeg);">
+                                            <div class="inactiveStatus"></div>
+
+                                            <div class="row" id="item">
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-name">Rumput Laut Hot<span>
+                                                            Berat 100g<br>
+                                                            Kemasan Box</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-price-count-box">
+                                                        <div class="ticket-control">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        disabled="disabled" data-type="minus"
+                                                                        data-field="quant[7]">
+                                                                        <span class="glyphicon glyphicon-minus"></span>
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[7]"
+                                                                    class="form-control input-number" value="0" min="0"
+                                                                    max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        data-type="plus" data-field="quant[7]">
+                                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <p class="price">Rp 7.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ticket-description">
+                                                <p><strong>Deskripsi:</strong><br>Makaroni Bantet adalah makaroni yang
+                                                    diolah sedemikian rupa untuk menjaga keseimbangan antara tingkat
+                                                    kematangan dengan tekstur pengembangan yang pass</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="ticketBox" data-ticket-price="7000"
+                                            style="background-image: url(images/makaroni3.jpeg);">
+                                            <div class="inactiveStatus"></div>
+
+                                            <div class="row" id="item">
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-name">Keju Hot<span>
+                                                            Berat 100g<br>
+                                                            Kemasan Box</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                    <div class="ticket-price-count-box">
+                                                        <div class="ticket-control">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        disabled="disabled" data-type="minus"
+                                                                        data-field="quant[8]">
+                                                                        <span class="glyphicon glyphicon-minus"></span>
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[8]"
+                                                                    class="form-control input-number" value="0" min="0"
+                                                                    max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button"
+                                                                        class="btn btn-default btn-number"
+                                                                        data-type="plus" data-field="quant[8]">
+                                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <p class="price">Rp 7.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="ticket-description">
+                                                <p><strong>Deskripsi:</strong><br>Makaroni Bantet adalah makaroni yang
+                                                    diolah sedemikian rupa untuk menjaga keseimbangan antara tingkat
+                                                    kematangan dengan tekstur pengembangan yang pass</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                            	<div class="ticketBox" data-ticket-price="5000" style="background-image: url(images/makaroni3.jpeg);">
-                                	<div class="inactiveStatus"></div>
-                                    
-                                    <div class="row" id="item">
- 			                       	<div class="col-xs-6">
-            							<div class="ticket-name">Plaza<span>
-                                        Standing<br>
-                                        1 Ticket for 1 person</span></div>
-            						</div>
-                                    
-                                    <div class="col-xs-6">
-            							<div class="ticket-price-count-box">
-                                            <div class="ticket-control">
-                                                <div class="input-group">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[8]">
-                                                          <span class="glyphicon glyphicon-minus"></span>
-                                                      </button>
-                                                  </span>
-                                                  <input type="text" name="quant[8]" class="form-control input-number" value="0" min="0" max="10">
-                                                  <span class="input-group-btn">
-                                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[8]">
-                                                          <span class="glyphicon glyphicon-plus"></span>
-                                                      </button>
-                                                  </span>
-                                                </div>
-                                                
-                                            </div>
-                                            <p class="price">Rs.5000</p>
-                                        </div>
-            						</div>
+                            <div role="tabpanel" class="tab-pane fade" id="blog">
+                                <h4> Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod<br>
+                                    Pune 411058</h4><br>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="termCondition">
+                                <h4>
+                                    Makaroni Bantet adalah makaroni yang diolah sedemikian rupa untuk menjaga
+                                    keseimbangan antara tingkat kematangan dengan tekstur pengembangan yang pass,
+                                    sehingga sensasi kriuknya dapat mengguncang lidah Anda.
+
+                                    Dijamin halal dan sehat, karena menggunakan bahan-bahan berkualitas dan bersih.</h4>
+
+                                <h4>Tersedia 3 varian rasa yang lebih ramah untuk perut keluarga Anda, seperti KEJU HOT,
+                                    RUMPUT LAUT HOT, dan AYAM BAWANG HOT.
+
+                                    Selain itu ada juga rasa yang lebih menantang bagi Anda pecinta rasa pedas gila,
+                                    yaitu EXTRA HOT. </h4>
+
+                                <h4>Kemasan box membuat Makaroni Bantet Bundet lebih praktis dan elegan untuk Anda bawa
+                                    kemanapun berada.
+
+                                    STOK SIAP SEDIA, silakan serbu gaes!
+                                </h4>
+                                <h4>Anda dapat melakukan pemesanan melalui web ini dengan cara memasukan jumlah order
+                                    yang dikehendaki kemudian proses checkout, dimana Anda akan diteruskan ke official
+                                    whatsapp kami untuk validasi transaksi.
+                                </h4>
+                                <h4>Anda juga dapat menemukan toko kami di platform lain seperti:</h4><br>
+                                <h4>
+                                    <div class="alert alert-success" role="alert">
+                                        <a href="https://www.tokopedia.com/tokobundet/makaroni-bantet-bundet-extra-hot">
+                                            Tokopedia</a>
                                     </div>
-                                	
-                                    
-                                    <div class="ticket-description">
-                                    	<p><strong>Please refer Venue Plan:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </h4>
+                                <h4>
+                                    <div class="alert alert-warning" role="alert">
+                                        <a href="https://shopee.co.id/Makaroni-Bantet-Bundet-Pedas-Dan-Gurih-Kemasan-Box-i.240125673.18939489697?sp_atk=3bdda9b3-aeed-4559-a8dc-0efe6ca457c8&xptdk=3bdda9b3-aeed-4559-a8dc-0efe6ca457c8t">
+                                            Shopee</a>
                                     </div>
-                                            
+                                </h4>
+                                <br><br>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cart">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>
+                                    <span class="ticket-count">0</span> Item <span class="divider"></span> Total: Rp
+                                    <span class="total-amount">0</span>
+                                </p>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="text-right">
+                                    <a class="btn disabled" data-toggle="modal" data-target="#ticket-details">PROSES</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="venue">
-                    	<h4> Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod<br> Pune 411058</h4><br>
-                        <p>Dimulai dari kecintaan sang Istri menyantap camilan pedas gila dan tidak manusiawi saat masih menjadi siswa pondok di Kediri, Jawa Timur.</p>
-                
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="blog">
-                        <iframe class="blogshot" src="https://shoot.bundet.com" title="Blog"></iframe>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="termCondition">
-           				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                    </div>
-                  </div>
-                
-                </div>
-                
-                	<div class="cart">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <p> 
-                        	<span class="ticket-count">0</span> Tickets <span class="divider"></span> Total: Rs. <span class="total-amount">0</span></p>
-                    </div>
-                    <div class="col-xs-6">
-                    	<div class="text-right">
-                        	<a class="btn disabled" data-toggle="modal" data-target="#ticket-details">PROCEED</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                       
+
                 </div>
             </div>
         </div>
     </div>
 
-<!-- Modal -->
-<div class="modal right fade" id="ticket-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <!--<div class="modal-header">
+    <!-- Modal -->
+    <div class="modal right fade" id="ticket-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--<div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Share your contact Details</h4>
       </div>-->
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        	<img src="images/icons/cancel.png">
-        </button>
-        <h4 class="modal-title">Your Tickets</h4>
-      </div>
-      <div class="modal-body">
-        
-        <div class="cart-information">
-            	<div class="ticket-type"></div>
-          		<ul>
-	                <li>Tickets: <span class="ticket-count"></span></li>
-                    <li>Price: <span class="ticket-amount"></span></li>
-                    <hr>
-                    <li>Total: <span class="total-amount"></span></li>
-    			</ul>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/cancel.png">
+                    </button>
+                    <h4 class="modal-title">Summary</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="cart-information">
+                        <div class="ticket-type" id="idProduct"></div>
+                        <ul>
+                            <li>Item: <span class="ticket-count" id="idItems"></span></li>
+                            <li>Harga: <span class="ticket-amount" id="idPrice"></span></li>
+                            <hr>
+                            <li>Total: <span class="total-amount" id="idTotal"></span></li>
+                            <li><br></li>
+                            <li><label style="font-size: 12px;"><input type="checkbox" class="tos" id="tos" name="tos"
+                                        value="Setuju" style="margin-right: 8px;" /> * Saya menyadari harga total belum
+                                    termasuk ongkos kirim</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="contactForm">
+                        <h3>Info Pembeli</h3>
+                        <form name="myForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nama" name="fname">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Alamat Pengiriman" ,
+                                    name="faddress">
+                            </div>
+                        </form>
+                        <button type="submit" class="btn" id="check-out" onclick="setUrl()">CHECKOUT</button>
+                    </div>
+
+                </div>
             </div>
-            
-            <div class="contactForm">	
-                <h3>Share your contact Details</h3>
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter your name">
-                  </div>
-                  
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter your Email ID">
-                  </div>
-                  
-                  <div class="form-group">
-                     <input type="text" class="form-control" placeholder="Enter your Mobile No.">
-                  </div>
-                  
-        		  <a type="submit" class="btn">Proceed to Payment</a>
-                </form>
-            </div>
-        
-      </div>
+        </div>
     </div>
-  </div>
-</div>
-    
-    
+
+    <script>
+        let date = new Date();
+        let options = {
+            weekday: "long", year: "numeric", month: "short",
+            day: "numeric", hour: "2-digit", minute: "2-digit"
+        };
+
+        let time = document.getElementById("currentTime");
+        time.innerHTML = date.toLocaleTimeString("en-us", options);
+
+        function setUrl() {
+            let product = document.getElementById("idProduct").textContent;
+            let items = document.getElementById("idItems").textContent;
+            let price = document.getElementById("idPrice").textContent;
+            let total = document.getElementById("idTotal").textContent;
+            let validator = items * price;
+            console.log(product.replace(/  +/g, '%0a'));
+
+            let name = document.forms["myForm"]["fname"].value;
+            let address = document.forms["myForm"]["faddress"].value;
+
+            if (name != "" && address != "" && document.getElementById("tos").checked && validator == total) {
+                let url = "https://wa.me/+6281326771717?text=Product: "
+                    + product.replace(/  +/g, '%0a')
+                    + "============================::---%0aJumlah: "
+                    + items + " %0aHarga: "
+                    + price + " %0aTotal Bayar: "
+                    + total + " %0a"
+                    + "============================::---%0aNama: "
+                    + name + " %0aAlamat: "
+                    + address + " %0a"
+                    + "============================::---%0aTerm of Service: %0aDengan ini saya telah sadar dan menyetujui bahwa harga ongkir ditentukan secara terpisah tergantung pada jasa ekspedisi yang saya pilih"
+
+                window.open(url);
+            } else if (!document.getElementById("tos").checked) {
+                alert("Anda belum setuju terkait harga ongkir terpisah!");
+            } else if (validator != total) {
+                alert("Eits!, ada hekel nih, lagi bokek ya :D wkwkwkwk!");
+            }
+            else {
+                alert("Mohon lengkapi NAMA dan ALAMAT LENGKAP PENGIRIMAN!");
+            }
+        }
+    </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/allscript.js"></script>
-  </body>
+</body>
+
 </html>
